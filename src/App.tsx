@@ -3,23 +3,25 @@ import { StyleSheet, Text, View } from "react-native";
 import Header from "./components/Header";
 import "../global.css";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { WeatherDisplay } from "./components/WeatherDisplay";
 
-
-export default function App() {
+const App = () => {
   return (
     <SafeAreaView style={styles.container} > 
     <StatusBar style="auto" />
     <Header></Header>
       <Text>Welcome to Temp Today!</Text> 
+      <WeatherDisplay temperature={25} condition="Sunny"></WeatherDisplay>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: "white",
     alignItems: "center",
-    justifyContent: "center",
-    paddingHorizontal: 20,
   },
 });
+
+export default App;
