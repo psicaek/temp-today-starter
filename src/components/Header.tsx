@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 export const Header = () => {
   return (
-    <View className="bg-blue-600 p-4 items-center w-10/12">
+    <View style={styles.container}>
       <Text style={styles.title}>Temp Today!</Text>
     </View>
   );

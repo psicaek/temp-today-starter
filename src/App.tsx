@@ -11,7 +11,7 @@ const App = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
-      <Header />
+      <Header></Header>
       <Text>Welcome to Temp Today!</Text>
       <WeatherDisplay temperature={25} condition="Sunny" />
       <AdditionalInfo windSpeed={10} humidity={80} />
@@ -22,7 +22,7 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    //flex: 1,
     backgroundColor: "white",
     alignItems: "center",
   },
