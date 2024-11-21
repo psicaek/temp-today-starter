@@ -20,7 +20,7 @@ export const WeatherDisplay: React.FC<WeatherDisplayProps> = ({
 
 const Container = styled.View`
   align-items: center;
-  margin-top: 50;
+  margin-top: 40;
 `;
 
 const Temperature = styled.Text`

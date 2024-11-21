@@ -11,7 +11,7 @@ const AdditionalInfo: React.FC<AdditionalInfoProps> = ({
   humidity,
 }) => {
   return (
-    <View className="mt-3 items-center">
+    <View className=" items-center flex-1">
       <Text className="text-base my-1">Wind Speed: {windSpeed} km/h</Text>
       <Text className="text-base my-1">Humidity: {humidity}%</Text>
     </View>
