@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
-export const Header = () => {
+const Header = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Temp Today!</Text>
+      <Text style={styles.title}>Temp Today</Text>
     </View>
   );
 };
@@ -17,8 +17,9 @@ const styles = StyleSheet.create({
   },
   title: {
     color: "#fff",
-    fontSize: 25,
+    fontSize: 24,
     fontWeight: "bold",
   },
 });
+
 export default Header;

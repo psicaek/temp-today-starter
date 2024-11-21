@@ -6,10 +6,10 @@ import StyledButton from "./StyledButton";
 import { cityCoordinates, CityName } from "../data/cities";
 
 const LocationSelector: React.FC = () => {
-  const [selectedCity, SetSelectedCity] = useState<CityName>("Berlin");
+  const [selectedCity, setSelectedCity] = useState<CityName>("Berlin");
 
   const handleCityChange = (city: CityName) => {
-    SetSelectedCity(city);
+    setSelectedCity(city);
     console.log("Selected city:", city);
   };
 
